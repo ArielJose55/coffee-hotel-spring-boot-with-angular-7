@@ -26,7 +26,9 @@ repositories {
 
 dependencies {
 	implementation 'org.projectlombok:lombok'
+	implementation 'mysql:mysql-connector-java'
+	implementation('com.h2database:h2')
 	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
-	implementation('mysql:mysql-connector-java')
-	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	implementation('org.springframework.boot:spring-boot-starter-data-rest')
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

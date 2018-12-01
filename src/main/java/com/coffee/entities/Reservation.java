@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -28,4 +29,9 @@ public class Reservation {
 	@Column(name="PRICE_PER_DAY")
 	private Double pricePerDay;
 	
+//	@OneToMany(targetEntity=Client.class)
+//	private Client client;
+	
+//	@OneToMany(targetEntity=Habitation.class)
+//	private Habitation habitation;
 }
